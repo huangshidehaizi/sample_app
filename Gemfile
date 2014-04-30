@@ -6,6 +6,8 @@ gem 'rails', '4.0.4'
 
 gem 'therubyracer'
 
+gem 'rubyzip','< 1.0.0'
+
 # Use sqlite3 as the database for Active Record
 group :development, :test do
   gem 'sqlite3', '1.3.7'
