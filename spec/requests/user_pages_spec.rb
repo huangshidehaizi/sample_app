@@ -36,9 +36,9 @@ describe "UserPages" do
         fill_in "Name",         with: "Example User"
         fill_in "Email",        with: "user@example.com"
         fill_in "Password",     with: "foorbar"
-        fill_in "Confirmation", with: "foobar"
+        fill_in "Confirmation", with: "foorbar"
       end
-      it "should not create a user" do
+      it "should create a user" do
         expect { click_button submit}.to change(User, :count).by(1)
       end
     end
